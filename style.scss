@@ -471,6 +471,24 @@ img {
     gap: 30px;
   }
 }
+.product-box__cart {
+  margin-top: 48px;
+  margin-bottom: 96px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, $width3);
+    justify-content: center;
+    gap: 30px;
+    &__heading {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 36px;
+      text-align: center;
+      color: $colorBlackText;
+    }
+  
+}
+
 //
 .product {
   position: relative;
@@ -553,7 +571,16 @@ img {
 }
 
 // cart
+.cart__card__close {
 
+    position: absolute;
+    right: 22px;
+    top: 28px;
+    &:hover {
+      cursor: pointer;
+    }
+  
+}
 .cart__block {
   padding-top: 96px;
   padding-bottom: 128px;
